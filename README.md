@@ -1,2 +1,4 @@
 # angularjs-1605
-a web page made by angularjs + bootstrap for a friend
+hi 
+this is a web page made by angularjs + bootstrap for a friend.
+just for my study about angular
