@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="ngmodules/angular.min.js"></script>
+    <script src="ngmodules/angular-route.min.js"></script>
+    <script src="ngmodules/angular-resource.min.js"></script>
+    <script src="ngmodules/angular-cookies.min.js"></script>
+    <script src="controllers/myapp.js"></script>
+    <script src="controllers/controllers.js"></script>
+
+
+    <title>test page</title>
+</head>
+<body>
+    <div class="container-fluid" ng-controller="myAppCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+           <!-- <div class="panel-body">
+                Panel content
+            </div>-->
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation"><a href="#!/home" data-toggle="pills">Home</a></li>
+                    <li role="presentation"><a href="#!/pro1" data-toggle="pills">Profile</a></li>
+                    <li role="presentation"><a href="#!/pro2" data-toggle="pills">Messages</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <a href="http://www.baidu.com/">baidu</a>
+                <div ng-view></div>
+                <div class="slide-animate" ng-include="template.url"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
